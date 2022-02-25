@@ -72,10 +72,10 @@ list(APPEND TARGET_LIBRARIES sioclient_tls)
 endif()
 
 install(FILES ${ALL_HEADERS} 
-    DESTINATION "${TARGET_DIR}/usr/include"
+    DESTINATION "${D}/usr/include"
 )
 
 install(TARGETS ${TARGET_LIBRARIES}
-    DESTINATION "${TARGET_DIR}/usr/lib"
+    DESTINATION "${D}/usr/lib"
 )
 
