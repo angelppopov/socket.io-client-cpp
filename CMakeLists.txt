@@ -88,14 +88,6 @@ endif()
 
 include(GNUInstallDirs)
 
-install(FILES ${ALL_HEADERS} 
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-)
-
-install(TARGETS ${TARGET_LIBRARIES}
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
-
 if(BUILD_UNIT_TESTS)
 message(STATUS "Building with unit test support.")
 enable_testing()
